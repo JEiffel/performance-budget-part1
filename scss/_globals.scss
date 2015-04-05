@@ -1,0 +1,36 @@
+/* Globals.scss */
+
+$color: #262626;
+$background-color: #fff;
+$base-font-size: 22px;
+$logo-color: #4e4e4e;
+$line-height: 1.45;
+
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin body-font-light {
+    font-family: 'Open Sans', 'helvetica', 'verdana', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin headline-font {
+    font-family: 'Open Sans', 'helvetica', 'verdana', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
